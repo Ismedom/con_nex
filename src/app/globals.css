@@ -32,3 +32,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.custom-select [role="option"] {
+  background-color: transparent !important;
+}
+
+.custom-select [role="option"]:hover {
+  background-color: #f0f0f0 !important;
+}
+
+.custom-select [role="option"][aria-selected="true"] {
+  background-color: #e0e0e0 !important;
+}

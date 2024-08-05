@@ -9,14 +9,15 @@ interface UnitOption {
 interface SelectOptionProps {
   array: UnitOption[];
   conversion_Factor: Dispatch<SetStateAction<number>>;
+  N_C: number;
 }
 
-const SelectUnit: React.FC<SelectOptionProps> = ({ array, conversion_Factor }) => {
+const SelectUnit: React.FC<SelectOptionProps> = ({ array, conversion_Factor, N_C }) => {
   return (
     <div>
       <Select
         required
-        placeholder="Select one"
+        placeholder={N_C === 1 ? "From" : "To"}
         className="w-[140px] font-bold text-black"
         defaultSelectedKeys={[array[0]?.unit]}
         radius="full"

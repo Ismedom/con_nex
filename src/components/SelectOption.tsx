@@ -12,7 +12,7 @@ const SelectOption: React.FC<SelectOptionProps> = ({ PeriodUnit, setPeriodUnit }
     <div>
       <Select
         required
-        placeholder="Select one"
+        placeholder="Select Unit"
         className="w-[140px] font-bold text-black"
         defaultSelectedKeys={["area"]}
         radius="full"
