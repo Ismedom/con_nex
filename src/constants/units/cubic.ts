@@ -1,34 +1,90 @@
-export const Cubic = [
+interface VolumeUnit {
+  unit: string;
+  conversionFactor: number;
+}
+export const cubic: VolumeUnit[] = [
   {
-    "Cubic Centimeter": 1000000,
+    unit: "m³",
+    conversionFactor: 1,
+  },
+  {
     unit: "cm³",
+    conversionFactor: 1e-6,
   },
   {
-    "Cubic Millimeter": 1000000000,
     unit: "mm³",
+    conversionFactor: 1e-9,
   },
   {
-    Liter: 1000,
-    unit: "L",
+    unit: "km³",
+    conversionFactor: 1e9,
   },
   {
-    Milliliter: 1000000,
-    unit: "mL",
+    unit: "dm³",
+    conversionFactor: 1e-3,
   },
   {
-    "Cubic Inch": 61023.7441,
+    unit: "dam³",
+    conversionFactor: 1e3,
+  },
+  {
+    unit: "hm³",
+    conversionFactor: 1e6,
+  },
+  {
+    unit: "liter",
+    conversionFactor: 1e-3,
+  },
+  {
+    unit: "milliliter",
+    conversionFactor: 1e-6,
+  },
+  {
+    unit: "microliter",
+    conversionFactor: 1e-9,
+  },
+  {
+    unit: "nanoliter",
+    conversionFactor: 1e-12,
+  },
+  {
+    unit: "gallon",
+    conversionFactor: 0.00378541,
+  },
+  {
+    unit: "quart",
+    conversionFactor: 0.000946353,
+  },
+  {
+    unit: "pint",
+    conversionFactor: 0.000473176,
+  },
+  {
+    unit: "cup",
+    conversionFactor: 0.00024,
+  },
+  {
+    unit: "fluid ounce",
+    conversionFactor: 2.95735e-5,
+  },
+  {
+    unit: "tablespoon",
+    conversionFactor: 1.47868e-5,
+  },
+  {
+    unit: "teaspoon",
+    conversionFactor: 4.92892e-6,
+  },
+  {
     unit: "in³",
+    conversionFactor: 1.6387e-5,
   },
   {
-    "Cubic Foot": 35.3147,
     unit: "ft³",
+    conversionFactor: 0.0283168,
   },
   {
-    "Cubic Yard": 1.30795,
     unit: "yd³",
-  },
-  {
-    Gallon: 264.172,
-    unit: "gal",
+    conversionFactor: 0.764555,
   },
 ];

@@ -1,39 +1,79 @@
-//
-export const lengthUnit = [
+interface LengthUnit {
+  unit: string;
+  conversionFactor: number;
+}
+
+export const lengthUnit: LengthUnit[] = [
   {
-    Kilometer: 0.001,
-    unit: "km",
+    unit: "m",
+    conversionFactor: 1,
   },
   {
-    Centimeter: 100,
     unit: "cm",
+    conversionFactor: 0.01,
   },
   {
-    Millimeter: 1000,
     unit: "mm",
+    conversionFactor: 0.001,
   },
   {
-    Micrometer: 1000000,
-    unit: "µm",
+    unit: "km",
+    conversionFactor: 1000,
   },
   {
-    Nanometer: 1000000000,
-    unit: "nm",
+    unit: "hm",
+    conversionFactor: 100,
   },
   {
-    Inch: 39.3701,
-    unit: "in",
+    unit: "dam",
+    conversionFactor: 10,
   },
   {
-    Foot: 3.28084,
-    unit: "ft",
+    unit: "dm",
+    conversionFactor: 0.1,
   },
   {
-    Yard: 1.09361,
-    unit: "yd",
+    unit: "inch",
+    conversionFactor: 0.0254,
   },
   {
-    Mile: 0.000621371,
-    unit: "mi",
+    unit: "foot",
+    conversionFactor: 0.3048,
+  },
+  {
+    unit: "yard",
+    conversionFactor: 0.9144,
+  },
+  {
+    unit: "mile",
+    conversionFactor: 1609.34,
+  },
+  {
+    unit: "micrometer",
+    conversionFactor: 1e-6,
+  },
+  {
+    unit: "nanometer",
+    conversionFactor: 1e-9,
+  },
+  {
+    unit: "angstrom",
+    conversionFactor: 1e-10,
+  },
+  {
+    unit: "nautical mile",
+    conversionFactor: 1852,
+  },
+  {
+    unit: "light year",
+    conversionFactor: 9.461e15,
+  },
+  {
+    unit: "astronomical unit",
+    conversionFactor: 1.496e11,
+  },
+  {
+    unit: "parsec",
+    conversionFactor: 3.086e16,
   },
 ];
