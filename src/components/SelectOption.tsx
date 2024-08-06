@@ -1,6 +1,6 @@
 import React, { Dispatch, SetStateAction } from "react";
 import { unit_name } from "@/data/unit";
-import { Select, SelectItem } from "@nextui-org/select";
+import { Select, SelectItem } from "@nextui-org/react";
 
 interface SelectOptionProps {
   PeriodUnit: string;
